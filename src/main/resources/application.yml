@@ -1,0 +1,36 @@
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    org.hibernate: ERROR
+    org.apache.commons.beanutils: ERROR
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/nebular
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  
+server:
+  port: 8888
+  servlet :
+    context-path :  /nebular
+
+management:
+  server:
+    port: 8081
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    info:
+      enabled: true
+
+  
