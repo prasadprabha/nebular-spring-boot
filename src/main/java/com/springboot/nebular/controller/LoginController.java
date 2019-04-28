@@ -76,7 +76,7 @@ public class LoginController {
    
 	@RequestMapping(value = "/get-application-name", method = RequestMethod.GET)
     public String getApplicationName() {
-        return "Saved the user";
+        return "Welcome to Nebular Spring Boot Application";
     }
 
 }
