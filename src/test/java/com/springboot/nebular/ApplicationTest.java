@@ -1,5 +1,8 @@
 package com.springboot.nebular;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +11,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.springboot.nebular.authentication.service.UserService;
+import com.springboot.nebular.model.db.Role;
 import com.springboot.nebular.model.db.User;
 
 
@@ -31,23 +35,23 @@ public class ApplicationTest {
 	
 	@Test
 	public void testSaveUser() {
-/*		System.out.println("Saving to : "+ env.getProperty("spring.datasource.url") );
+		
 		User user = new User();
-		user.setId(1L);
-		user.setUsername("prasadprabha07@gmail.com");
+		user.setId(2L);
+		user.setUsername("contact@akveo.com");
 		user.setPassword("password123");
-		user.setFirstName("Prasad");
-		user.setMiddleName("Prabha");
+		user.setFirstName("Nebular");
+		user.setMiddleName("Developer");
 		user.setLastName("Suseela");
 		Set<Role> roles = new HashSet<Role>();
 		Role role = new Role();
-		role.setId(1L);
-		role.setName("admin");
+		role.setId(2L);
+		role.setName("developer");
 		roles.add(role);
 		userService.saveRole(role);
 		user.setRoles(roles);
 		User userDetails  = userService.save(user);
-		System.out.println(userDetails.getUsername() + " && " +userDetails.getPassword());*/
+		System.out.println(userDetails.getUsername() + " && " +userDetails.getPassword());
 	}
 
 }
