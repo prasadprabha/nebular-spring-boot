@@ -31,8 +31,9 @@ nebular-spring-boot is a [Spring Boot](https://spring.io/guides/gs/spring-boot) 
 git clone https://github.com/prasadprabha/nebular-spring-boot.git
 cd nebular-spring-boot
 mvn clean install
-java -jar target/nebular-spring-boot.jar
-```
+java -jar target/nebular-0.0.1-SNAPSHOT.jar
+
+The second error is``
 
 You can then access the application from Nebular UI with this URL: http://localhost:8888/nebular/auth/login
 
